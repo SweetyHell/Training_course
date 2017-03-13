@@ -25,4 +25,6 @@ func main() {
 	}
 
 	fmt.Println(p1)
+	fmt.Println(p1.Person.First)
+	fmt.Println(p1.First)
 }
