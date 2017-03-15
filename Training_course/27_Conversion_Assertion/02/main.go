@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 	var name interface{} = "Sydney"
-	str, ok := name.(string)
+	str, ok := name.(string) //interface type needs assortion, not convertion.
 	if ok {
 		fmt.Printf("%T\n", str)
 	} else {
