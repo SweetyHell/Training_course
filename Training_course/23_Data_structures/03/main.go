@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-type Person struct {
+type person struct {
 	First string
 	Age   int
 }
@@ -12,7 +12,7 @@ type Person struct {
 // }
 
 func main() {
-	p1 := &Person{"James", 20}
+	p1 := &person{"James", 20}
 
 	fmt.Println(*p1)
 	fmt.Println(p1)

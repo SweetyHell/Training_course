@@ -23,14 +23,14 @@ func main() {
 	buckets := make([]int, 12)
 	// Loop over the words
 	for scanner.Scan() {
-		n := Hashbucket(scanner.Text(), 12)
+		n := hashbucket(scanner.Text(), 12)
 		buckets[n]++
 	}
 	fmt.Println(buckets)
 
 }
 
-func Hashbucket(word string, buckets int) int {
+func hashbucket(word string, buckets int) int {
 	letter := int(word[0])
 	bucket := letter % buckets
 	return bucket

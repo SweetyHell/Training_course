@@ -4,13 +4,13 @@ import "fmt"
 
 const (
 	_  = iota
-	KB = 1 << (iota * 10)
-	MB = 1 << (iota * 10)
+	kB = 1 << (iota * 10)
+	mB = 1 << (iota * 10)
 )
 
 func main() {
-	fmt.Printf("%b\t", KB)
-	fmt.Printf("%d\n", KB)
-	fmt.Printf("%b\t", MB)
-	fmt.Printf("%d\n", MB)
+	fmt.Printf("%b\t", kB)
+	fmt.Printf("%d\n", kB)
+	fmt.Printf("%b\t", mB)
+	fmt.Printf("%d\n", mB)
 }

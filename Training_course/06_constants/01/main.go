@@ -3,26 +3,26 @@ package main
 import "fmt"
 
 const (
-	A = iota
-	B
-	C
+	a = iota
+	b
+	c
 )
 const (
-	D = iota
-	E
-	F
+	d = iota
+	e
+	f
 )
 const (
 	_ = iota
-	G = iota * 10
+	g = iota * 10
 )
 
 func main() {
-	fmt.Println(A)
-	fmt.Println(B)
-	fmt.Println(C)
-	fmt.Println(D)
-	fmt.Println(E)
-	fmt.Println(F)
-	fmt.Println(G)
+	fmt.Println(a)
+	fmt.Println(b)
+	fmt.Println(c)
+	fmt.Println(d)
+	fmt.Println(e)
+	fmt.Println(f)
+	fmt.Println(g)
 }

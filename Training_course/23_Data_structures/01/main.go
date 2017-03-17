@@ -2,20 +2,20 @@ package main
 
 import "fmt"
 
-type Person struct {
+type person struct {
 	First string
 	Last  string
 	Age   int
 }
-type Doublezero struct {
-	Person
+type doublezero struct {
+	person
 	First         string
 	Licencetokill bool
 }
 
 func main() {
-	p1 := Doublezero{
-		Person: Person{
+	p1 := doublezero{
+		person: person{
 			First: "James",
 			Last:  "Bond",
 			Age:   20,
@@ -25,6 +25,6 @@ func main() {
 	}
 
 	fmt.Println(p1)
-	fmt.Println(p1.Person.First)
+	fmt.Println(p1.person.First)
 	fmt.Println(p1.First)
 }

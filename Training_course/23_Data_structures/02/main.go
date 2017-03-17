@@ -2,32 +2,32 @@ package main
 
 import "fmt"
 
-type Person struct {
+type person struct {
 	First string
 	Last  string
 	Age   int
 }
 
-type Doublezero struct {
-	Person
+type doublezero struct {
+	person
 	Licence bool
 }
 
-func (p Person) fullname() string {
+func (p person) fullname() string {
 	return p.First + " " + p.Last
 }
-func (p Doublezero) fullname() string {
+func (p doublezero) fullname() string {
 	return "hello, " + p.First + " " + p.Last
 }
 
 func main() {
-	p1 := Person{
+	p1 := person{
 		First: "James",
 		Last:  "Bond",
 		Age:   20,
 	}
-	p2 := Doublezero{
-		Person: Person{
+	p2 := doublezero{
+		person: person{
 			First: "Orlando",
 			Last:  "Palando",
 			Age:   34,

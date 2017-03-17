@@ -22,7 +22,7 @@ func main() {
 		}
 		done <- true
 	}()
-	//you need another go func for this to work
+	//you need another go func for this to work, otherwise <-done just blocks the next part of the code (range)
 	go func() {
 		<-done
 		<-done
